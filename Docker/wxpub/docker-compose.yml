@@ -1,0 +1,9 @@
+version: '2'
+services:
+  wxpub:
+    build: .
+    restart: always
+    ports:
+      - "4001:4001"
+    volumes:
+      - "./code:/script/code"
